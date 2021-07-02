@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
+       $(document).ready(function () {
+         $("#flip").click(function () {
+           $("#panel").slideToggle("slow");
+         });
+
+         $("#closeBtn").click(function () {
+           $("#panel").slideUp("slow");
+         });
+       });
+     </script>
+  </head>
+  <body>
+    <h2>Click Slider</h2>
+    <div id="flip">View Room Details</div>
+    <div id="panel">
+      <div id="closeBtn" class="close-btn"><i class="bi bi-x-circle"></i></div>
+      <div class="bg-white custom-border ">
+        <h2 class="content-heading">Serenade Of The Seas</h2>
+        <div class="divider"></div>
+        <div class="divider-d"></div>
+        <div class="d-flex">
+          <h4 class="mr-2 mb-0">BrandCode - <strong>R</strong></h4>
+          <div class="divider"></div>
+          <h4 class="mr-2 mb-0">ShipCode - <strong>SR</strong></h4>
+          <div class="divider"></div>
+          <h4 class="mr-2 mb-0">ViewType - <strong>O</strong></h4>
+          <div class="divider"></div>
+          <h4 class="mr-2 mb-0">CabinType - <strong>O</strong></h4>
+        </div>
+        <div class="divider"></div>
+        <div class="divider-d"></div>
+        <p class="content-description">Guarantee Two twin beds that convert to Royal King and bathroom. One or two Pullman beds in staterooms with up to 3 or 4 guests. Stateroom: 155 sq. ft.</p>
+        <br>
+        <span class="content-active">Avaliable</span>
+        <div class="bottom-border"></div>
+      </div>
+    </div>
+
+ 
+  </body>
+</html>
